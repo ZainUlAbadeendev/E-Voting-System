@@ -1,0 +1,100 @@
+/* css/stylesheet.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#headerSection {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#headerSection h1 {
+    font-size: 3em;
+    color: #00c6ff;
+    text-shadow: 0 0 10px rgba(0, 198, 255, 0.7), 0 0 20px rgba(0, 198, 255, 0.5);
+}
+
+#bodySection {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+#bodySection h3 {
+    font-size: 1.5em;
+    color: #00c6ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#bodySection input[type="text"],
+#bodySection input[type="number"],
+#bodySection input[type="password"],
+#bodySection input[type="file"],
+#bodySection select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#bodySection input[type="text"]::placeholder,
+#bodySection input[type="number"]::placeholder,
+#bodySection input[type="password"]::placeholder {
+    color: #bbb;
+}
+
+#bodySection input[type="file"] {
+    padding: 0;
+}
+
+#bodySection button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#bodySection button:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+}
+
+#bodySection a {
+    color: #00c6ff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#bodySection a:hover {
+    text-decoration: underline;
+}
+
+#bodySection form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

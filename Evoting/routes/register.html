@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Voting</title>
+    <link rel="stylesheet" href="../css/stylesheet2.css">
+</head>
+<body>
+    <div id="headerSection">
+    <h1>E Voting System</h1>
+    </div>
+    <br>
+    <div id="bodySection">
+    <h3>Registeration</h3>
+    <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Enter Name"><br><br>
+        <input type="number" name="mobile" placeholder="Enter Mobile No"><br><br>
+        <input type="password" name="password" placeholder="Password"><br><br>
+        <input type="Password" name="cpassword" placeholder="Confirm Password"><br><br>
+        <input type="text" name="address" placeholder="Address"><br><br>
+        Upload Image <input type="file" name="photo"><br><br>
+        Select Role: <select name="role">
+            <option value="1">Voter</option>
+            <option value="2">Group</option>
+        </select><br><br>
+        <button>Register</button>
+        Already User?<a href="/index.html">Login Here</a>
+    </form>
+    </div>
+</body>
+</html>
